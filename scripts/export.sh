@@ -18,6 +18,10 @@ export AWS_CREDENTIAL_FILE=$AWS_RDS_HOME/credential-file-path
 # GitHub na Vivo
 export https_proxy=http//a5114064:lu%402222p@proxyba.vivo.com.br:8080
 
+# PRECISA DESTE EXPORT PARA O TERMINAL
+export CDHISTORY="/tmp/cd-${USER}"
+
+# CORES DO TERMINAL
 export BLUE="\[\033[0;34m\]"
 export NO_COLOR="\[\e[0m\]"
 export GRAY="\[\033[1;30m\]"
