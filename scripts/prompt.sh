@@ -11,7 +11,7 @@ custom_prompt () {
    fi
 
   local RUBY_VERSION=`ruby -e "puts RUBY_VERSION"`
-  local GEMSET_NAME=`rvm gemset name`
+#  local GEMSET_NAME=`rvm gemset name`
   
   if [[ "$GEMSET_NAME" != "base" ]]; then
     GEMSET_NAME="${GEMSET_NAME}@"
@@ -74,9 +74,9 @@ custom_prompt () {
       STATE="${STATE}${YELLOW}*${NO_COLOR}"
     fi
   
-    PS1="\u - ${RUBY_PROMPT}${YELLOW}\w${NO_COLOR} ( ${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}${NO_COLOR} )\n ⤷  "
+    PS1="\u - ${YELLOW}\w${NO_COLOR} ( ${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}${NO_COLOR} )\n $ "
   else
-  	PS1="\u - ${RUBY_PROMPT}${YELLOW}\w${NO_COLOR} \n ⤷  "
+  	PS1="\u ${YELLOW}\w${NO_COLOR} \n $ "
   fi
 }
 PROMPT_COMMAND=custom_prompt
