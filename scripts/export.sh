@@ -16,7 +16,7 @@ export PATH=$PATH:$AWS_RDS_HOME/bin
 export AWS_CREDENTIAL_FILE=$AWS_RDS_HOME/credential-file-path
 
 # GitHub na Vivo
-export https_proxy=http//a5114064:lu%402222p@proxyba.vivo.com.br:8080
+export https_proxy=http//a5114064:lu%402222q@proxyba.vivo.com.br:8080
 
 # PRECISA DESTE EXPORT PARA O TERMINAL
 export CDHISTORY="/tmp/cd-${USER}"
