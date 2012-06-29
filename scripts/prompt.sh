@@ -74,9 +74,9 @@ custom_prompt () {
       STATE="${STATE}${YELLOW}*${NO_COLOR}"
     fi
   
-    PS1="\u@\h ${YELLOW}\w${NO_COLOR} ( ${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}${NO_COLOR} )\n $ "
+    PS1="\u@\h ""$STATUS"" ${YELLOW}\w${NO_COLOR} ( ${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}${NO_COLOR} )\n $ "
   else
-  	PS1="\u@\h ${YELLOW}\w${NO_COLOR} \n $ "
+  	PS1="\u@\h ""$STATUS"" ${YELLOW}\w${NO_COLOR} \n $ "
 
   fi
 }
