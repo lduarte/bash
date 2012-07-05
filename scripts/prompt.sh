@@ -44,10 +44,7 @@ custom_prompt () {
   RUBY_PROMPT="${GRAY}[${RAILS_PROMPT}${RUBY_VERSION}]${NO_COLOR} "
 
   if [ "$STATUS" != "" ]; then
-    if [[ "$STATUS" =~ "$CHANGES_NOT_STAGED" ]]; then
-      PROMPT_COLOR=$RED
-      STATE=""
-    elif [[ "$STATUS" =~ "$NOTHING_TO_COMMIT" ]]; then
+    if [[ "$STATUS" =~ "$NOTHING_TO_COMMIT" ]]; then
       PROMPT_COLOR=$RED
       STATE=""
     elif [[ "$STATUS" =~ "$DIVERGED" ]]; then
@@ -60,6 +57,9 @@ custom_prompt () {
       PROMPT_COLOR=$RED
       STATE="${STATE}${RED}↑${NO_COLOR}"
     elif [[ "$STATUS" =~ "$CHANGED" ]]; then
+      PROMPT_COLOR=$RED
+      STATE=""
+    elif [[ "$STATUS" =~ "$CHANGES_NOT_STAGED" ]]; then
       PROMPT_COLOR=$RED
       STATE=""
     elif [[ "$STATUS" =~ "$TO_BE_COMMITED" ]]; then
