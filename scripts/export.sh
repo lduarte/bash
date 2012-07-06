@@ -3,7 +3,7 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK
 export JAVA_VENDOR=Sun
 
 # WEBLOGIC 12
-export MW_HOME=/Users/lduarte/desenv/ambiente/wls1211_dev
+#export MW_HOME=/Users/lduarte/desenv/ambiente/wls1211_dev
 
 # CORES DO TERMINAL
 export GREP_OPTIONS="--color=auto"
